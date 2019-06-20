@@ -1,7 +1,7 @@
 # eat-da-burger
 
 ## Live Preview
- - [Eat-da-Burger](https://eat-da-burger-sher.herokuapp.com/)
+ - [Eat-da-Burger](https://eat-da-burger-srm.herokuapp.com/)
 
 ## Description
 
