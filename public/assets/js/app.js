@@ -5,7 +5,7 @@ $(function () {
     var newSleep = $(this).data("newsleep");
 
     var newSleepState = {
-      sleepy: newSleep
+      eaten: newSleep
     };
 
     // Send the PUT request.

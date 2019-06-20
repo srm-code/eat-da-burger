@@ -25,7 +25,7 @@
         <h2 class="text-left">Burgers</h2>
         <ul>
           {{#each burgers}}
-          {{#unless sleepy}}
+          {{#unless eaten}}
           {{> burgers/burger-block sleep=true}}
           {{/unless}}
           {{/each}}
@@ -35,7 +35,7 @@
         <h2 class="text-left">Devoured!</h2>
         <ul>
           {{#each burgers}}
-          {{#if sleepy}}
+          {{#if eaten}}
           {{> burgers/burger-block sleep=false}}
           {{/if}}
           {{/each}}
