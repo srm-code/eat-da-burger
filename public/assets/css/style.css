@@ -32,7 +32,7 @@ ul {
 }
 
 /* IDs */
-#logo {
+.logo {
   max-width: 100px;
   height: auto;
 }

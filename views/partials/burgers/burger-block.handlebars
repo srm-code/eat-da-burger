@@ -1,9 +1,12 @@
 <li>
+
+	{{#if sleep}}<img class="logo" src="/assets/images/burger.png" alt="hamburger">{{else}}<img class="logo"
+		src="/assets/images/eaten.png" alt="happy sun licking it's lips">{{/if}}
+	{{id}}. {{name}} &nbsp;
+
 	{{#if sleep}}
 	<button class="btn btn-success btn-sm change-sleep" data-id="{{id}}" data-newsleep="{{sleep}}">
 		Devour it!
 	</button>
 	{{/if}}
-
-	{{id}}. {{name}}
 </li>
