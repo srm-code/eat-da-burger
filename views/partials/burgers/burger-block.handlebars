@@ -1,8 +1,8 @@
 <li>
 
-	{{#if sleep}}<img class="logo" src="/assets/images/burger.png" alt="hamburger">{{else}}<img class="logo"
+	{{#if sleep}}<img class="burger-img" src="/assets/images/burger.png" alt="hamburger">{{else}}<img class="eaten-img"
 		src="/assets/images/eaten.png" alt="happy sun licking it's lips">{{/if}}
-	{{id}}. {{name}} &nbsp;
+	&nbsp;{{id}}. {{name}} &nbsp;
 
 	{{#if sleep}}
 	<button class="btn btn-success btn-sm change-sleep" data-id="{{id}}" data-newsleep="{{sleep}}">

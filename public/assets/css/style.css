@@ -1,11 +1,12 @@
 /* Elements */
 body {
-  overflow: auto;
-  padding: 10px;
+  overflow-y: scroll;
+  padding-top: 10px;
   margin: 0;
   font-family: 'Dancing Script', cursive;
   background-color: wheat;
   background: url("/assets/images/diner.jpg");
+  background-size: cover;
 }
 
 li {
@@ -18,10 +19,19 @@ ul {
 }
 
 /* Classes */
+.burger-img {
+  max-width: 65px;
+  height: auto;
+}
 .create-update-form {
   padding: 5px;
   margin: 5px;
   background: aqua;
+}
+
+.eaten-img {
+  max-width: 50px;
+  height: auto;
 }
 
 .form-group {
@@ -32,8 +42,7 @@ ul {
   font-weight: bold;
 }
 
-/* IDs */
-.logo {
+.logo-img {
   max-width: 100px;
   height: auto;
 }
