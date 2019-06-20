@@ -1,12 +1,14 @@
 ### Schema
 
+DROP DATABASE IF EXISTS burger_db;
 CREATE DATABASE burger_db;
 USE burger_db;
-
+DROP TABLE IF EXISTS burger_db;
 CREATE TABLE burgers
 (
 	id int NOT NULL AUTO_INCREMENT,
 	name varchar(255) NOT NULL,
 	sleepy BOOLEAN DEFAULT false,
+    createdAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
 	PRIMARY KEY (id)
 );
