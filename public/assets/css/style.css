@@ -1,13 +1,22 @@
+/* Elements */
+body {
+  padding: 10px;
+  margin: 0;
+  font-family: 'Dancing Script', cursive;
+  background-color: wheat;
+  background: url("/assets/images/diner.jpg");
+}
+
 li {
   padding: 5px;
   margin: 5px;
-  background: #faebd7;
 }
 
-.label {
-  font-weight: bold;
+ul {
+  list-style-type: none;
 }
 
+/* Classes */
 .create-update-form {
   padding: 5px;
   margin: 5px;
@@ -16,4 +25,14 @@ li {
 
 .form-group {
   margin-bottom: 5px;
+}
+
+.label {
+  font-weight: bold;
+}
+
+/* IDs */
+#logo {
+  max-width: 100px;
+  height: auto;
 }

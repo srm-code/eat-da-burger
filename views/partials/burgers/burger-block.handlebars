@@ -1,7 +1,9 @@
 <li>
-	{{name}}
-
+	{{#if sleep}}
 	<button class="change-sleep" data-id="{{id}}" data-newsleep="{{sleep}}">
-		{{#if sleep}}DEVOUR!{{else}}ORDER ANOTHER!{{/if}}
+		Devour it!
 	</button>
+	{{/if}}
+
+	{{name}}
 </li>
