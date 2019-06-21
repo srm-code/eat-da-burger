@@ -8,7 +8,9 @@
       <form class="create-form">
         <span class="form-group">
           <label for="ca">Burger Name:</label>
-          <input type="text" id="ca" name="name">
+          <input type="text" id="ca" name="name" pattern="[\w]+[\w\s]*"
+            title="only letters, numbers and spaces allowed">
+          <div id="error-msg" class="text-danger"></div>
         </span>
         &nbsp;
         <button class="btn btn-success btn-sm" type="submit">Add Burger</button>
