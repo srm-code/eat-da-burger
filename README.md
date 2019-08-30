@@ -5,12 +5,10 @@
 
 ## Description
 
-Eat-da-Burger is a full-stack node application delployed over Heroku that utilizes Javascript, jQuery, MySQL, Express, Express-handlebars, CSS3 and Bootstrap 4.
-  
-Eat-da-Burger users will be able to:
-  * Add burgers to the database. New burgers appear in the left column with a "Devour it!" button.
-  * Devour burgers by pressing the "Devour it!" button. When this happens, the burger gets moved to the right column.
-  * All burgers and their status are permanently stored in the database.
+Eat-da-Burger is an app that lets the user create burgers and "devour" them.  It works like this:
+  - Add your burger to the menu by entering a name in the input box and clicking the "Add Burger" button.
+  - Clicking the "Devour It" button moves it to the "Devoured" list at the right of the display.
+  - All burgers and their status' are permanently stored in the database.
 
  ## Author
   - Sherrie McNulty
@@ -20,7 +18,6 @@ Eat-da-Burger users will be able to:
  ### Front-end  
    - jQuery
    - Bootstrap
-   - HTML5
    - CSS3
 
   ### Back-end
