@@ -4,7 +4,7 @@
 [Eat-da-Burger](https://eat-da-burger-srm.herokuapp.com/)
 
 ## Author
-- [Sherrie McNulty](https://github.com/sherriemcnulty)
+[Sherrie McNulty](https://github.com/sherriemcnulty)
 
 ## Description
 Eat-da-Burger is an app that lets the user create burgers and "devour" them.  It works like this:
