@@ -10,7 +10,7 @@ Eat-da-Burger is an app that lets the user create burgers and "devour" them.  It
 - All burgers and their status' are permanently stored in the database.
 
 ## Author
-- Sherrie McNulty
+- [Sherrie McNulty](https://github.com/sherriemcnulty)
  
 ## Technologies Used
 
