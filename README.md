@@ -20,7 +20,7 @@ Eat-da-Burger is an app that lets the user create burgers and "devour" them.  It
 - CSS3
 
 ### Back-end
-- MySql
+- MySQL
 - Node.js
 - Express.js
 - Express-Handlebars
