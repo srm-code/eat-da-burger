@@ -29,5 +29,5 @@ Eat-da-Burger is an app that lets the user create burgers and "devour" them.  It
   ### Deployment
    - Heroku
   
-## 
+## Copyright 
 © Sherrie McNulty 2019
