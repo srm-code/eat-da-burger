@@ -4,16 +4,22 @@
       Eat-Da-Burger!
     </h1>
     <div class="text-center">
-      <h2>Add a burger here then see what happens to it when you Devour It!</h2>
+      <p class="text-left">
+        Submit your order in the entry box below to see it in the "Orders" list. Click the 'Devour it" button to move it
+        to the "Devoured" column. All orders and their status are stored in a database so you can see them on future
+        visits.
+      </p>
       <form class="create-form">
         <span class="form-group">
           <label for="ca">Burger Name:</label>
           <input type="text" id="ca" name="name" pattern="[\w]+[\w\s]*"
             title="only letters, numbers and spaces allowed">
+          &nbsp;
+          <button class="btn btn-success btn-sm" type="submit">Add Burger</button>
+          &nbsp;
           <div id="error-msg" class="text-danger"></div>
         </span>
-        &nbsp;
-        <button class="btn btn-success btn-sm" type="submit">Add Burger</button>
+
       </form>
     </div>
     <hr>
