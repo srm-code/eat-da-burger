@@ -1,15 +1,14 @@
 /* Elements */
 body {
 	overflow-y: scroll;
-	padding-top: 1rem;
 	background-color: wheat;
 	background: url("/assets/images/diner.jpg");
 	background-size: cover;
 }
 
-li {
+/* li {
 	margin-top: 1rem;
-}
+} */
 
 /* Classes */
 .burger-img,
