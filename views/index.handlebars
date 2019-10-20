@@ -1,3 +1,4 @@
+{{!-- This is the main part of the body  --}}
 <div class="container">
   <div class="jumbotron jumbotron-fluid rounded-0 px-5">
     <h1 class="text-center ">
@@ -12,28 +13,26 @@
       <p>
         Technologies: jQuery, Bootstrap, CSS3, MySQL, Node, Express, MySQL
       </p>
-      {{!-- Order input & button --}}
+      {{!-- Order input form --}}
       <form class="create-form">
         <span class="form-group">
           <label for="ca">Burger Name:</label>
-          <input type="text" id="ca" name="name" pattern="[\w]+[\w\s]*"
+          <input class="align-middle" type="text" id="ca" name="name" pattern="[\w]+[\w\s]*"
             title="only letters, numbers and spaces allowed">
-          &nbsp;
-          <button class="btn btn-success btn-sm" type="submit">Add Burger</button>
-          &nbsp;
+          <button class="btn btn-success btn-sm align-middle" type="submit">Submit</button>
           <div id="error-msg" class="text-danger"></div>
         </span>
       </form>
     </div>
     <hr>
-    {{!-- Order list --}}
+    {{!-- The "Order" and "Devoured" lists contents use the "burgers" partial to insert list items --}}
     <div class="row">
       <div class="col-md-6">
         <h2 class="text-left">Orders</h2>
         <ul class="text-left list-unstyled mx-auto">
           {{#each burgers}}
           {{#unless eaten}}
-          {{> burgers/burger-block sleep=true}}
+          {{> burgers/burger-block newOrder=true}}
           {{/unless}}
           {{/each}}
         </ul>
@@ -44,7 +43,7 @@
         <ul class="text-left list-unstyled">
           {{#each burgers}}
           {{#if eaten}}
-          {{> burgers/burger-block sleep=false}}
+          {{> burgers/burger-block newOrder=false}}
           {{/if}}
           {{/each}}
         </ul>

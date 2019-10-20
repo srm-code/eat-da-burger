@@ -4,18 +4,17 @@
 $(function() {
 	$(".change-status").on("click", function(event) {
 		let id = $(this).data("id");
-		let newSleep = $(this).data("newsleep");
+		let newStatus = $(this).data("state");
 
-		const newSleepState = {
-			eaten: newSleep
+		const newStateObj = {
+			eaten: newStatus
 		};
 
 		// Send the PUT request.
 		$.ajax("/api/burgers/" + id, {
 			type: "PUT",
-			data: newSleepState
+			data: newStateObj
 		}).then(function() {
-			//console.log("changed sleep to", newSleep);
 			// Reload the page to get the updated list
 			location.reload();
 		});
