@@ -2,50 +2,50 @@
 "use strict";
 
 $(function() {
-  $(".change-sleep").on("click", function(event) {
-    let id = $(this).data("id");
-    let newSleep = $(this).data("newsleep");
+	$(".change-status").on("click", function(event) {
+		let id = $(this).data("id");
+		let newSleep = $(this).data("newsleep");
 
-    const newSleepState = {
-      eaten: newSleep
-    };
+		const newSleepState = {
+			eaten: newSleep
+		};
 
-    // Send the PUT request.
-    $.ajax("/api/burgers/" + id, {
-      type: "PUT",
-      data: newSleepState
-    }).then(function() {
-      //console.log("changed sleep to", newSleep);
-      // Reload the page to get the updated list
-      location.reload();
-    });
-  });
+		// Send the PUT request.
+		$.ajax("/api/burgers/" + id, {
+			type: "PUT",
+			data: newSleepState
+		}).then(function() {
+			//console.log("changed sleep to", newSleep);
+			// Reload the page to get the updated list
+			location.reload();
+		});
+	});
 
-  $(".create-form").on("submit", function(event) {
-    // Make sure to preventDefault on a submit event.
-    event.preventDefault();
+	$(".create-form").on("submit", function(event) {
+		// Make sure to preventDefault on a submit event.
+		event.preventDefault();
 
-    const newBurger = {
-      name: $("#ca")
-        .val()
-        .trim()
-    };
+		const newBurger = {
+			name: $("#ca")
+				.val()
+				.trim()
+		};
 
-    if (!newBurger.name) {
-      $("#error-msg").text("oOps! What kind of burger do you want?");
-      return;
-    }
+		if (!newBurger.name) {
+			$("#error-msg").text("oOps! What kind of burger do you want?");
+			return;
+		}
 
-    $("#error-msg").text("");
-    $("#create-form").empty();
+		$("#error-msg").text("");
+		$("#create-form").empty();
 
-    // Send the POST request.
-    $.ajax("/api/burgers", {
-      type: "POST",
-      data: newBurger
-    }).then(function() {
-      // Reload the page to get the updated list
-      location.reload();
-    });
-  });
+		// Send the POST request.
+		$.ajax("/api/burgers", {
+			type: "POST",
+			data: newBurger
+		}).then(function() {
+			// Reload the page to get the updated list
+			location.reload();
+		});
+	});
 });

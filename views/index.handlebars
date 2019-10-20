@@ -1,13 +1,12 @@
 <div class="container">
   <div class="jumbotron jumbotron-fluid">
-    <h1 class="text-center "><img class="logo-img" src="/assets/images/burger.png" alt="hamburger">&nbsp;Welcome to
-      Eat-Da-Burger!
+    <h1 class="text-center ">
+      <img class="burger-img" src="/assets/images/burger.png" alt="hamburger">&nbsp;Greasy Burgers
     </h1>
     <div class="text-center">
       <p class="text-left">
-        Submit your order in the entry box below to see it in the "Orders" list. Click the 'Devour it" button to move it
-        to the "Devoured" column. All orders and their status are stored in a database so you can see them on future
-        visits.
+        Submit your order in the text box below. Click the 'Devour it" button to move it
+        to the "Devoured" list. (A MySQL database is used to preserve the state between visits.)
       </p>
       <form class="create-form">
         <span class="form-group">
@@ -19,14 +18,13 @@
           &nbsp;
           <div id="error-msg" class="text-danger"></div>
         </span>
-
       </form>
     </div>
     <hr>
     <div class="row">
       <div class="col-md-6">
-        <h2 class="text-left">Burgers</h2>
-        <ul>
+        <h2 class="text-left">Orders</h2>
+        <ul class="text-left">
           {{#each burgers}}
           {{#unless eaten}}
           {{> burgers/burger-block sleep=true}}
@@ -35,7 +33,7 @@
         </ul>
       </div>
       <div class="col-md-6">
-        <h2 class="text-left">Devoured!</h2>
+        <h2 class="text-left">Devoured</h2>
         <ul>
           {{#each burgers}}
           {{#if eaten}}
